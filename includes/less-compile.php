@@ -5,18 +5,18 @@
 if ( !FILE_WRITEABLE ) return;
 
 if ( CURRENT_THEME == 'cherry' ) {
-	$bootstrapInput = PARENT_DIR .'/less/bootstrap.less';
+	$bootstrapInput = PARENT_DIR .'/assets/less/bootstrap.less';
 } else {
-	$bootstrapInput = CHILD_DIR .'/bootstrap/less/bootstrap.less';
+	$bootstrapInput = CHILD_DIR .'/assets/less/bootstrap.less';
 }
-$bootstrapOutput = CHILD_DIR .'/bootstrap/css/bootstrap.css';
+$bootstrapOutput = CHILD_DIR .'/assets/css/bootstrap.css';
 
 /**
  * Current theme I/O files
  */
 if ( CURRENT_THEME == 'cherry' ) {
-	$themeInput  = PARENT_DIR .'/less/style.less';
-	$themeOutput = PARENT_DIR .'/css/style.css';
+	$themeInput  = PARENT_DIR .'/assets/less/style.less';
+	$themeOutput = PARENT_DIR .'/assets/css/style.css';
 } else {
 	$themeInput  = CHILD_DIR .'/style.less';
 	$themeOutput = CHILD_DIR .'/main-style.css';
@@ -93,7 +93,7 @@ function cherryVariables() {
 function bootstrapVariables( $must ) {
 
 	$val = '';
-	$file = CHILD_DIR .'/bootstrap/less/variables.less';
+	$file = CHILD_DIR .'/assets/less/variables.less';
 
 	if ( file_exists($file) ) {
 		$allVariablessArray = file( $file );
