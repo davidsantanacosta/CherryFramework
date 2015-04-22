@@ -34,9 +34,8 @@
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 	<link rel="alternate" type="application/rss+xml" title="<?php bloginfo( 'name' ); ?>" href="<?php bloginfo( 'rss2_url' ); ?>" />
 	<link rel="alternate" type="application/atom+xml" title="<?php bloginfo( 'name' ); ?>" href="<?php bloginfo( 'atom_url' ); ?>" />
-	<link rel="stylesheet" type="text/css" media="all" href="<?php echo CHILD_URL; ?>/bootstrap/css/bootstrap.css" />
-	<link rel="stylesheet" type="text/css" media="all" href="<?php echo CHILD_URL; ?>/bootstrap/css/responsive.css" />
-	<link rel="stylesheet" type="text/css" media="all" href="<?php echo PARENT_URL; ?>/css/camera.css" />
+	<link rel="stylesheet" type="text/css" media="all" href="<?php echo CHILD_URL; ?>/assets/css/bootstrap.css" />
+	<link rel="stylesheet" type="text/css" media="all" href="<?php echo PARENT_URL; ?>/assets/css/camera.css" />
 	<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 	<?php
 		/* Always have wp_head() just before the closing </head>
@@ -55,7 +54,7 @@
 		</div>
 	<![endif]-->
 	<!--[if gte IE 9]><!-->
-		<script src="<?php echo PARENT_URL; ?>/js/jquery.mobile.customized.min.js" type="text/javascript"></script>
+		<script src="<?php echo PARENT_URL; ?>/assets/js/jquery.mobile.customized.min.js" type="text/javascript"></script>
 		<script type="text/javascript">
 			jQuery(function(){
 				jQuery('.sf-menu').mobileMenu({defaultText: <?php echo '"' . apply_filters( 'cherry_text_translate', html_entity_decode( of_get_option('mobile_menu_label') ), 'mobile_menu_label' ) . '"'; ?>});

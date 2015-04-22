@@ -93,7 +93,7 @@
 	function comment_child_var() {
 		global $variablesArray;
 
-		$file = CHILD_DIR .'/bootstrap/less/variables.less';
+		$file = CHILD_DIR .'/assets/less/variables.less';
 
 		if ( file_exists($file) ) {
 			$allVariablessArray = file($file);
@@ -145,11 +145,11 @@
 
 	function clean_less_cache() {
 		if ( CURRENT_THEME == 'cherry' ) {
-			$bootstrapInput	= PARENT_DIR .'/less/bootstrap.less';
-			$themeInput		= PARENT_DIR .'/less/style.less';
+			$bootstrapInput	= PARENT_DIR .'/assets/less/bootstrap.less';
+			$themeInput		= PARENT_DIR .'/assets/less/style.less';
 		} else {
-			$bootstrapInput	= CHILD_DIR .'/bootstrap/less/bootstrap.less';
-			$themeInput		= CHILD_DIR .'/style.less';
+			$bootstrapInput	= CHILD_DIR .'/assets/less/bootstrap.less';
+			$themeInput		= CHILD_DIR .'/assets/less/style.less';
 		}
 
 		$cacheFile1 = $bootstrapInput.".cache";
