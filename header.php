@@ -35,6 +35,7 @@
 	<link rel="alternate" type="application/rss+xml" title="<?php bloginfo( 'name' ); ?>" href="<?php bloginfo( 'rss2_url' ); ?>" />
 	<link rel="alternate" type="application/atom+xml" title="<?php bloginfo( 'name' ); ?>" href="<?php bloginfo( 'atom_url' ); ?>" />
 	<link rel="stylesheet" type="text/css" media="all" href="<?php echo CHILD_URL; ?>/assets/css/bootstrap.css" />
+	<link rel="stylesheet" type="text/css" media="all" href="<?php echo CHILD_URL; ?>/assets/css/font-awesome.min.css" />
 	<link rel="stylesheet" type="text/css" media="all" href="<?php echo PARENT_URL; ?>/assets/css/camera.css" />
 	<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 	<?php
